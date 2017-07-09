@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hiver</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+  <script>
+    //Function which generates the required output
+    function myFunction() {
+        var name = document.getElementById('name').value; //Stores the input value
+        var result = Math.floor(Math.random() * 10) + 6;  //Generates Random number between 6 and 15
+        document.getElementById('output').innerHTML = name+" "+result; //Inserts the name and the number in the paragraph with id = output
+    }
+  </script>
+</head>
+<body>
+  <h2>Hiver Challenge</h2>
+  <label>Enter Name : </label> <br><br>
+  <input type="text" placeholder="Enter name" id="name"><br><br>
+  <button onclick="myFunction()">Submit</button><br><br>
+  <p id="output"></p>
+</body>
+</html>
